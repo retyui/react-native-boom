@@ -32,12 +32,20 @@ export const extractActionFromMsgEvent = (event: Object): ?Object => {
 };
 
 // MUST be without deps
-
 export function extractVkObject() {
-  window.ReactNativeWebView.postMessage(
-    JSON.stringify({
-      type: "web/EXTRACT_VK_OBJECT",
-      payload: window.vk
-    })
-  );
+  if (window.ReactNativeWebView) {
+    window.ReactNativeWebView.postMessage(
+      JSON.stringify({
+        type: "web/EXTRACT_VK_OBJECT",
+        payload: window.vk
+      })
+    );
+  } else {
+    window.postMessage(
+      JSON.stringify({
+        type: "web/EXTRACT_VK_OBJECT",
+        payload: window.vk
+      })
+    );
+  }
 }
