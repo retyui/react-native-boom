@@ -34,7 +34,7 @@ export const getTrackId = createSelector(prop("fullId"));
 
 export const getTrackTitle = createSelector(prop("title"));
 
-export const getTrackAuthor = createSelector(prop("author"));
+export const getTrackAuthor = createSelector(prop("performer"));
 
 export const getTrackSrc = createSelector(prop("url"));
 

@@ -77,7 +77,7 @@ const makeHumanReadableTrackObject = e => {
     fullId: e[Be.AUDIO_ITEM_INDEX_OWNER_ID] + "_" + e[Be.AUDIO_ITEM_INDEX_ID],
     title: e[Be.AUDIO_ITEM_INDEX_TITLE] || "",
     subTitle: e[Be.AUDIO_ITEM_INDEX_SUBTITLE],
-    // performer: i,
+    performer: e[Be.AUDIO_ITEM_INDEX_PERFORMER],
     duration: intval(e[Be.AUDIO_ITEM_INDEX_DURATION]),
     lyrics: intval(e[Be.AUDIO_ITEM_INDEX_LYRICS]),
     url: e[Be.AUDIO_ITEM_INDEX_URL],
@@ -103,7 +103,6 @@ const makeHumanReadableTrackObject = e => {
     isExplicit: !!(e[Be.AUDIO_ITEM_INDEX_FLAGS] & Be.AUDIO_ITEM_EXPLICIT_BIT),
     isUMA: !!(e[Be.AUDIO_ITEM_INDEX_FLAGS] & Be.AUDIO_ITEM_UMA_BIT),
     isReplaceable: !!(e[Be.AUDIO_ITEM_INDEX_FLAGS] & Be.AUDIO_ITEM_REPLACEABLE),
-    ads: e[Be.AUDIO_ITEM_INDEX_ADS],
     album: e[Be.AUDIO_ITEM_INDEX_ALBUM],
     albumId: intval(e[Be.AUDIO_ITEM_INDEX_ALBUM_ID]),
     albumPart: intval(e[Be.AUDIO_ITEM_INDEX_ALBUM_PART]),
@@ -190,7 +189,7 @@ export const createOnFetchSuccessReducer = (filterFn: Function) => (
     filter(([id, track]) => filterFn(id, track, action)),
     fromPairs
   )(state);
-
+console.log(' --- xdebug playlistData', playlistData)
   return pipe(
     toPairs,
     map(([id, track]) => [
