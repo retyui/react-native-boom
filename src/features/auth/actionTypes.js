@@ -1,0 +1,11 @@
+// @flow
+
+import { FEATURE_NAME } from "./consts/index";
+
+export const AUTHORIZE = `${FEATURE_NAME}/AUTHORIZE`;
+
+export const AUTHORIZE_SUCCESS = `${FEATURE_NAME}/AUTHORIZE_SUCCESS`;
+
+export const AUTHORIZE_FAILURE = `${FEATURE_NAME}/AUTHORIZE_FAILURE`;
+
+export const DEAUTHORIZE = `${FEATURE_NAME}/DEAUTHORIZE`;

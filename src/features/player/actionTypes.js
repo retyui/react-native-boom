@@ -1,0 +1,16 @@
+// @flow
+
+import { FEATURE_NAME } from "./consts/index";
+
+export const PLAYER_PLAY = `${FEATURE_NAME}/PLAY`;
+export const PLAYER_PAUSE = `${FEATURE_NAME}/PAUSE`;
+export const PLAYER_STOP = `${FEATURE_NAME}/STOP`;
+export const PLAYER_NEXT = `${FEATURE_NAME}/NEXT`;
+export const PLAYER_PREV = `${FEATURE_NAME}/PREV`;
+export const PLAYER_SEEK_TO = `${FEATURE_NAME}/SEEK_TO`;
+
+export const PLAYBACK_END = `${FEATURE_NAME}/PLAYBACK_END`;
+export const PLAYBACK_CHANGE = `${FEATURE_NAME}/PLAYBACK_CHANGE`;
+export const PLAYBACK_STATE_UPDATE = `${FEATURE_NAME}/PLAYBACK_STATE_UPDATE`;
+
+export const PLAYER_PLAY_TRACK = `${FEATURE_NAME}/PLAY_TRACK`;

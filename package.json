@@ -1,0 +1,52 @@
+{
+  "name": "BOOM",
+  "version": "6.3.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.7.1",
+    "@react-native-community/netinfo": "^5.3.3",
+    "@react-native-community/viewpager": "^3.3.0",
+    "@react-native-firebase/analytics": "^6.3.1",
+    "@react-native-firebase/app": "6.3.1",
+    "@react-native-firebase/messaging": "^6.3.1",
+    "date-fns": "^2.9.0",
+    "fbemitter": "^2.1.1",
+    "hash.js": "^1.1.7",
+    "mime-types": "^2.1.26",
+    "ramda": "^0.27.0",
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "react-native-app-settings": "^2.0.1",
+    "react-native-cookies": "^3.3.0",
+    "react-native-fs": "^2.16.4",
+    "react-native-navigation": "^4.8.1",
+    "react-native-progress": "^4.0.3",
+    "react-native-swipe-list-view": "^2.1.3",
+    "react-native-swiper": "^1.5.14",
+    "react-native-system-setting": "^1.7.4",
+    "react-native-track-player": "^1.2.2",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-webview": "^8.0.6",
+    "react-redux": "^7.1.3",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/cli": "^2.9.0",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "metro-react-native-babel-preset": "^0.56.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

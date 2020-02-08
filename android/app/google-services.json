@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "673946731051",
+    "firebase_url": "https://react-native-boom.firebaseio.com",
+    "project_id": "react-native-boom",
+    "storage_bucket": "react-native-boom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673946731051:android:5cd9837accc46a261aa06e",
+        "android_client_info": {
+          "package_name": "com.boom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673946731051-m5dv4deerl7t12nr56b5jifj21irek5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.boom",
+            "certificate_hash": "351959268edbacf0dd1bdbb53510ff1ffabb761d"
+          }
+        },
+        {
+          "client_id": "673946731051-hd7d02423m7gt03e94g0veack5pto1jm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzKripjzlT2paTd-xQZ_8VY_mjOHAssGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673946731051-hd7d02423m7gt03e94g0veack5pto1jm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
